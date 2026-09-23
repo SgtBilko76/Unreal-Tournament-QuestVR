@@ -1,11 +1,12 @@
-# Unreal Tournament VR — a Meta Quest port of UT99
+# Unreal Tournament VR — a Meta Quest & PICO port of UT99
 
-A standalone Meta Quest (Quest 2 / Pro / 3 / 3S — developed and tested on Quest 3) VR port of
-**Unreal Tournament (UT99)**, built on [Surreal Engine](https://github.com/dpjudas/SurrealEngine),
+A standalone VR port of **Unreal Tournament (UT99)** for Meta Quest 2 / Pro / 3 / 3S (developed
+and tested on Quest 3) and, experimentally, PICO 4 / Neo 3 — built on [Surreal Engine](https://github.com/dpjudas/SurrealEngine),
 a from-scratch reimplementation of Unreal Engine 1, with an OpenXR/Vulkan stereo renderer.
 
 The same engine also runs Unreal Gold in VR — see the sister repository
-[Unreal-Gold-QuestVR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR).
+[Unreal-Gold-QuestVR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR); both apps install side
+by side. More PortRoyale ports at [portroyale.online](https://portroyale.online).
 
 This repository contains **no copyrighted game content** — only engine code. You provide your
 own copy of the game (see below for a free, legal source).
@@ -18,8 +19,11 @@ own copy of the game (see below for a free, legal source).
 * Sniper rifle zoom shown as a scope screen above the gun, aimed with the hand
 * Redeemer guided shell steered with the right controller
 * World-anchored curved menu panel operated by pointing and clicking with the controller
-* VR comfort: no view bob, no double-tap dodge; recenter on the Meta button
+* VR comfort: no view bob, no double-tap dodge; recenter on the Meta / Home button
 * Save settings and botmatch play; deathmatch and botmatches work well
+* Installs side by side with [Unreal Gold VR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR) (separate app and data folder)
+* Experimental PICO 4 / Neo 3 support — one APK for both makes, **untested on PICO hardware**;
+  reports are very welcome
 
 ## Getting the game (legal, free)
 
@@ -31,19 +35,19 @@ Run the installer on a PC (Linux/macOS installers are on OldUnreal's GitHub rele
 from that page). The installer patches the game to the current OldUnreal 469 version — this
 port detects and runs it (tested with 469e); the original 436 also works.
 
-## Installing on the Quest
+## Installing on the headset
 
 1. Install the APK from the [Releases](../../releases) page (sideload with `adb install -r` or
-   SideQuest; developer mode required).
-2. Copy the game folders to `/sdcard/SurrealEngine/` on the headset so you have:
+   [SideQuest](https://sidequestvr.com/setup-howto); developer mode required). SideQuest is a
+   Quest tool — on PICO, sideload with adb.
+2. Copy the game folders to `/sdcard/SurrealEngineUT/` on the headset so you have:
 
-       /sdcard/SurrealEngine/System   Maps   Textures   Sounds   Music   Help
+       /sdcard/SurrealEngineUT/System   Maps   Textures   Sounds   Music   Help
 
-   e.g. `adb push "C:\Games\UnrealTournament\System" /sdcard/SurrealEngine/System` — and so on
+   e.g. `adb push "C:\Games\UnrealTournament\System" /sdcard/SurrealEngineUT/System` — and so on
    for each folder. Leave out your PC's `UnrealTournament.ini` / `User.ini`; the app keeps its
-   own settings. (One game at a time in `/sdcard/SurrealEngine` — swap the folders to switch
-   between UT and Unreal Gold.)
-3. Launch the app from the Unknown Sources section of the library and grant "All files access"
+   own settings.
+3. Launch **Unreal Tournament VR** from the Unknown Sources section of the library and grant "All files access"
    when asked.
 
 ## Controls
@@ -62,7 +66,7 @@ port detects and runs it (tested with 469e); the original 436 also works.
 | Left grip (hold) | Crouch |
 | Left Y | Scoreboard |
 | Left menu button | Open / close the game menu |
-| Meta button long-press | Recenter |
+| Meta / Home button long-press | Recenter |
 | Sniper zoom | Scope screen above the gun; aim with the hand |
 | Redeemer guided shell | Steered with the right controller |
 
@@ -71,6 +75,7 @@ port detects and runs it (tested with 469e); the original 436 also works.
 * Bot AI is only partially implemented in Surreal Engine.
 * No dynamic lighting; some movers/semisolid brushes behave oddly.
 * No networking/multiplayer.
+* PICO support is brand new and untested on hardware.
 
 ## Building
 
