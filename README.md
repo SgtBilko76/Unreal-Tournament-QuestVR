@@ -5,11 +5,11 @@ and tested on Quest 3) and, experimentally, PICO 4 / Neo 3 — built on [Surreal
 a from-scratch reimplementation of Unreal Engine 1, with an OpenXR/Vulkan stereo renderer.
 
 The same engine also runs Unreal Gold in VR — see the sister repository
-[Unreal-Gold-QuestVR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR); both apps install side
+[Unreal-Gold-QuestVR](https://github.com/SgtBilko76/Unreal-Gold-VR); both apps install side
 by side. More PortRoyale ports at [portroyale.online](https://portroyale.online).
 
 The same engine also runs Unreal Tournament in VR — see the sister repository
-[Unreal-Tournament-QuestVR](https://github.com/SgtBilko76/Unreal-Tournament-QuestVR); both apps
+[Unreal-Tournament-QuestVR](https://github.com/SgtBilko76/Unreal-Tournament-VR); both apps
 install side by side. More PortRoyale ports at [portroyale.online](https://portroyale.online).
 
 This repository contains **no copyrighted game content** — only engine code. You provide your
@@ -25,7 +25,7 @@ own copy of the game (see below for a free, legal source).
 * World-anchored curved menu panel operated by pointing and clicking with the controller
 * VR comfort: no view bob, no double-tap dodge; recenter on the Meta / Home button
 * Save settings and botmatch play; deathmatch and botmatches work well
-* Installs side by side with [Unreal Gold VR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR) (separate app and data folder)
+* Installs side by side with [Unreal Gold VR](https://github.com/SgtBilko76/Unreal-Gold-VR) (separate app and data folder)
 * Experimental PICO 4 / Neo 3 support — one APK for both makes, **untested on PICO hardware**;
   reports are very welcome
 
