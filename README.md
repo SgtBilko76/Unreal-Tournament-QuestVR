@@ -8,6 +8,10 @@ The same engine also runs Unreal Gold in VR — see the sister repository
 [Unreal-Gold-QuestVR](https://github.com/SgtBilko76/Unreal-Gold-QuestVR); both apps install side
 by side. More PortRoyale ports at [portroyale.online](https://portroyale.online).
 
+The same engine also runs Unreal Tournament in VR — see the sister repository
+[Unreal-Tournament-QuestVR](https://github.com/SgtBilko76/Unreal-Tournament-QuestVR); both apps
+install side by side. More PortRoyale ports at [portroyale.online](https://portroyale.online).
+
 This repository contains **no copyrighted game content** — only engine code. You provide your
 own copy of the game (see below for a free, legal source).
 
